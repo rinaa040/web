@@ -1,5 +1,6 @@
-from api_func import get_map_image_by_ll_z, show_image
+from api_func import Map
 ll = input("Введи координаты через запятую ")
 z = int(input("Введи мастшаб от 0 до 21 "))
-image = get_map_image_by_ll_z(ll, z)
-show_image(image)
+image = Map(ll, z)
+image.show_image()
+# 56.8498,53.2045
